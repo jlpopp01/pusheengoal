@@ -1,0 +1,191 @@
+/*The Universals*/
+
+*{
+    box-sizing: border-box;
+}
+
+.container {
+    width: 97%;
+    max-width: 1260px;
+    margin: auto;
+}
+
+body {
+    background-color: blueviolet;
+    margin:0;
+    font-family: 1em/1.5 'Oswald', sans-serif;
+    display: inline-block;
+}
+
+h1, h3 {
+    text-transform: uppercase;
+}
+
+p {
+    font-size: .875em;
+    line-height: 1.4;
+    margin: 0 0 1.5em;
+}
+
+/* Header Styling */
+
+.header-container {
+    text-align:center;
+    background-image:url("img/multilgmac.jpg");
+    background-repeat: no-repeat;
+    color: black;
+    background-size: cover;
+    padding-top:50px;
+    overflow: hidden;
+}
+
+.mac-logo {
+    border-radius: 112.5px;
+    height: 275px;
+    width: 225px;
+    margin:50px;
+    border: 5px dotted #5C3B7A;
+    transition: all .5s;
+}
+
+.mac-logo:hover {
+    transform: scale(1.5) rotate(360deg);
+}
+
+
+/* Main Elements All images uniform and information appears by hovering */
+
+.macaroons {
+    height: 400px;
+    width: 400px; 
+    transition: transform .5s;
+}
+
+.macaroons:hover {
+    transform: rotate(-25deg)
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: flex-start;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.macphoto {
+    position: relative;
+    line-height: 0;
+    margin: 3em;
+}
+
+.mac-container img{
+    max-width: 100%;
+}
+
+button {
+    color: #0CF56D;
+    width: 100%;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 700;
+    border: 4px dotted purple;
+    margin: auto;
+    border-radius: 1em;
+    background-color: purple;
+
+}
+
+.photo-overlay {
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0; 
+	left: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	display: flex; /* For centering text inside .photo-overlay */
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0,0,0, .5);
+}
+
+.photo-overlay h3 {
+	margin-top: 0;
+}
+
+.photo-overlay {
+    opacity:0;
+    transition: opacity .5s;
+}
+
+.photo-overlay:hover {
+    opacity: 1;
+}
+
+
+/*Footer - Pusheen links to Github*/
+
+.bread {
+    height:100px;
+    width:100px;
+}
+
+.main-footer{
+    background-color: #484858;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+@media (max-width:575px) {
+    body{
+        background-color: #0000ff;
+        color: white;
+    }
+
+    .header-container {
+        text-align:center;
+        background-image:url("img/multilgmac.jpg");
+        color: black;
+        overflow: hidden;
+        background-size: 575px 500px;
+    }
+    
+    .mac-logo {
+        border-radius: 62.5px;
+        height: 175px;
+        width: 125px;
+        margin:50px;
+        border: 2px dotted #5C3B7A;
+        transition: all .5s;
+    }
+    
+    .mac-logo:hover {
+        transform: scale(1.5) rotate(360deg);
+    }
+
+    .macaroons {
+        height: 200px;
+        width: 200px;
+    }
+
+    .main-footer {
+        background-color: white;
+        color: black;
+        text-align: center;
+
+    }
+    .bread {
+        height:75px;
+        width:75px;
+    }
+}
