@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="javascript" href="app.js">
+
 </head>
 
 <body>
@@ -86,11 +86,38 @@
                     <div class="img-overlay">
                         <h3>Liking What You See?</h3>
                             <p>Sadly, this isn't a real business. But this is the real front end of a website. If you're looking to boost your own front end or even need someone to build it from scratch feel free to hit the button below this image and a form will pop up for your contact information. If you click <a href="http://www.github.com/jlpopp01" target="_blank">Pusheen</a> below it will take you to my GitHub.</p>
-                                <button class="submit">Contact Me!</button>
+                            <div class="regmodal">
+                            <button class="submit" id="contactMeB">Contact Me!</button>
+                                <div id="contactMe" class="modal">
+                                    <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                            <p>
+                                                <form id="whatsTheTea">
+                                                        <div class= "form-group">
+                                                                <label for ="inputEmail">Email Address</label>
+                                                                <input type = "email" class = "form-control" id="inputEmail" placeholder="Enter Email">
+                                                           </div>
+                                                           <div class= "form-group">
+                                                               <label for ="inputName">Full Name</label>
+                                                               <input type = "name" class = "form-control" id="inputName" placeholder="Enter Full Name">
+                                                           </div>     
+                                                           <div class= "form-group">
+                                                                   <label for ="whatstheTea">What's The Tea?</label>
+                                                                   <input type = "text" class = "form-control" id="drama" placeholder="What's the Tea?">
+                                                           </div>       
+                                                       
+                                                           <div class = "modal-footer">
+                                                               <button type="button" class="modal-btn">Submit!</button>
+                                                           </div>
+                                                </form>
+                                            </p>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </div>
-    </div>
+
 
 
 
@@ -104,7 +131,9 @@
                 <p class="vanGogh">"Be kind to your self. Be good to your self."</p>
     </footer>
 
-<!-- Scripts for JQuery, JS and BootStrap-->    
+<!-- Scripts for JQuery, JS -->    
+<script type="text/javascript" src="jquery-1.8.3.js"></script>
+<script type="text/javascript" src="app.js"></script>
    
 </body>
 </html>
