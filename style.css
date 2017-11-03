@@ -134,15 +134,28 @@ button {
 /*Footer - Pusheen links to Github*/
 
 .bread {
-    height:100px;
-    width:100px;
+    height:150px;
+    width:150px;
+    display:flex;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
 }
 
 .main-footer{
-    background-color: #484858;
-    justify-content: space-around;
+    background-color: #939399;
     width: 100%;
     align-content:center;
+
+}
+
+.vanGogh {
+    color: purple;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    font-size: 4em;
+    text-align: center;
 }
 
 .clearfix::after {
