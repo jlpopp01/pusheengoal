@@ -137,8 +137,8 @@ button {
     display: none; 
     position: fixed; 
     z-index: 1; 
-    left: 0;
-    top: 0;
+    left: 2.5em;
+    top: 2.5em;
     width: 90%; 
     height: 90%; 
     overflow: auto; 
@@ -152,8 +152,8 @@ button {
 .modal-content {
     background-color: #616663;
     margin: 10% auto; 
-    padding-left: 50px;
-    padding-left: 50px;
+    padding-left: 1em;
+    padding-left: 1em;
     border: 4px solid rgb(126, 30, 134);
     width: 80%; 
     font-size: 28px;
@@ -173,23 +173,6 @@ button {
     text-decoration: none;
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /**/

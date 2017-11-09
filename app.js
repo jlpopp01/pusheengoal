@@ -1,3 +1,5 @@
+/* This is the JS for the modal. */
+
 var modal = document.getElementById('contactMe');
 var btn = document.getElementById("contactMeB");
 var span = document.getElementsByClassName("close")[0];
