@@ -137,8 +137,8 @@ button {
     display: none; 
     position: fixed; 
     z-index: 1; 
-    left: 2.5em;
-    top: 2.5em;
+    left: 2.5%;
+    top: 2.5%;
     width: 90%; 
     height: 90%; 
     overflow: auto; 
@@ -154,7 +154,7 @@ button {
     margin: 10% auto; 
     padding-left: 1em;
     padding-left: 1em;
-    border: 2px solid rgb(126, 30, 134);
+    border: 1px solid rgb(126, 30, 134);
     width: 90%; 
     font-size: 24px;
     overflow: auto;
