@@ -18,7 +18,7 @@ a {
 body {
     background-color: blueviolet;
     margin:0;
-    font-family: 1em/1.5 'Oswald', sans-serif;
+    font-family:'Oswald', sans-serif;
     display: inline-block;
 }
 
@@ -66,9 +66,6 @@ p {
     transition: transform .5s;
 }
 
-.macaroons:hover {
-    transform: rotate(-25deg)
-}
 
 .content {
     display: flex;
@@ -109,7 +106,6 @@ button {
 	left: 0;
 	padding-left: 20px;
 	padding-right: 20px;
-
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -136,15 +132,12 @@ button {
 .modal {
     display: none; 
     position: fixed; 
-    z-index: 1; 
     left: 2.5%;
     top: 2.5%;
     width: 90%; 
     height: 90%; 
     overflow: auto; 
     background-image: url("img/hugemac.jpg");
-    background-color: #000 .4;
-    background-repeat: none;
     background-size: cover;
 }
 
@@ -164,16 +157,11 @@ button {
 .close {
     color: #aaa;
     float: right;
-    font-size: 28px;
+    font-size: 35px;
     font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
     cursor: pointer;
 }
+
 
 
 /**/
@@ -199,7 +187,7 @@ button {
 
 .vanGogh {
     color: purple;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Amatic SC';
     font-weight: 700;
     font-size: 4em;
     text-align: center;
@@ -211,7 +199,9 @@ button {
 	clear: both;
 }
 
-@media (max-width:575px) {
+/* Media Query - Keep it simple unless you get extra time*/
+
+@media (max-width:650px) {
     body{
         background-color: #939399;
         color: white;
