@@ -155,13 +155,13 @@ button {
     padding: 3em;
     border: 1px solid rgb(126, 30, 134);
     width: 90%; 
-    font-size: 18px;
+    font-size: 16px;
     overflow: auto;
 }
 
 /* The Close Button */
 .close {
-    color: #aaa;
+    color: rgb(228, 9, 9);
     float: right;
     font-size: 35px;
     font-weight: bold;
