@@ -218,7 +218,7 @@ button {
         background-image:url("img/multilgmac.jpg");
         color: black;
         overflow: hidden;
-        background-size: 575px 500px;
+        background-size: cover;
     }
     
     .mac-logo {
