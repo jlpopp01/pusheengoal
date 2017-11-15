@@ -32,6 +32,13 @@ p {
     margin: 0 0 1.5em;
 }
 
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
 /* Header Styling */
 
 .header-container {
@@ -72,7 +79,7 @@ p {
     flex-wrap: wrap;
     align-items: flex-start;
     text-align: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .macphoto {
@@ -145,11 +152,10 @@ button {
 .modal-content {
     background-color: #616663;
     margin: 10% auto; 
-    padding-left: 1em;
-    padding-left: 1em;
+    padding: 3em;
     border: 1px solid rgb(126, 30, 134);
     width: 90%; 
-    font-size: 24px;
+    font-size: 18px;
     overflow: auto;
 }
 
