@@ -1,11 +1,11 @@
 /* This is the JS for the modal. */
 
 var modal = document.getElementById('contactMe');
-var btn = document.getElementById("contactMeB");
+var button = document.getElementById("contactMeB");
 var span = document.getElementsByClassName("close")[0];
 
 
-btn.onclick = function() {
+button.onclick = function() {
     modal.style.display = "block";
 }
 
@@ -18,3 +18,5 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+
