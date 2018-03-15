@@ -19,4 +19,7 @@ window.onclick = function(event) {
     }
 }
 
+//JS Ideas - Another form pops up that allows you to see submitted projects
+
+
 
