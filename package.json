@@ -1,0 +1,27 @@
+{
+  "name": "maybethisone",
+  "version": "1.0.0",
+  "description": "Hello and welcome to my project2.0! This is a build up of my Front End Project. Just like last time, you'll want to hover over the last image and you will be presented with two buttons. Click on the button \"What is this?\" and a form will be presented to you that allows you to enter your email address and a project idea. You can add project ideas and delete them and when you search for you email it will show the projects you have submitted. All dependencies have been added. In your terminal, switch to the file folder for this project and type npm start and that will get you started on the server side. In your webbrowser type \" localhost:3030\" and that will bring the project up.",
+  "main": "./public/js/app.js",
+  "dependencies": {
+    "angular": "^1.6.9",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlpopp01/pusheengoal.git"
+  },
+  "author": "Jaye Popplewell <jlpopp01@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jlpopp01/pusheengoal/issues"
+  },
+  "homepage": "https://github.com/jlpopp01/pusheengoal#readme"
+}
