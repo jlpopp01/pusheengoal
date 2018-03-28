@@ -1,0 +1,261 @@
+/*The Universals*/
+
+*{
+    box-sizing: border-box;
+}
+
+a {
+    font-weight: 700;
+}
+
+
+.container {
+    width: 97%;
+    max-width: 1260px;
+    margin: auto;
+}
+
+body {
+    background-color: blueviolet;
+    margin:0;
+    font-family:'Oswald', sans-serif;
+    display: inline-block;
+}
+
+h1, h3 {
+    text-transform: uppercase;
+}
+
+p {
+    font-size: .875em;
+    line-height: 1.4;
+    margin: 0 0 1.5em;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+
+.header-container {
+    text-align:center;
+    background-image:url("img/multilgmac.jpg");
+    background-repeat: no-repeat;
+    color: black;
+    background-size: cover;
+    padding-top:50px;
+    overflow: hidden;
+}
+
+.mac-logo {
+    border-radius: 112.5px;
+    height: 275px;
+    width: 225px;
+    margin:50px;
+    border: 5px dotted #5C3B7A;
+    transition: all .5s;
+}
+
+.mac-logo:hover {
+    transform: scale(1.5) rotate(360deg);
+}
+
+
+/* Main Elements All images uniform and information appears by hovering */
+
+.macaroons {
+    height: 400px;
+    width: 400px; 
+    transition: transform .5s;
+}
+
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    text-align: center;
+    justify-content: center;
+}
+
+.macphoto {
+    position: relative;
+    line-height: 0;
+    margin: 3em;
+}
+
+.mac-container img{
+    max-width: 100%;
+}
+
+button {
+    color: #0CF56D;
+    width: 100%;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: 700;
+    border: 4px dotted purple;
+    border-radius: 1em;
+    background-color: purple;
+
+}
+
+.img-overlay {
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0; 
+	left: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0,0,0, .5);
+}
+
+.img-overlay h3 {
+	margin-top: 0;
+}
+
+.img-overlay {
+    opacity:0;
+    transition: opacity .5s;
+}
+
+.img-overlay:hover {
+    opacity: 1;
+}
+
+/*CSS for Modal*/
+
+/* The Modal (background) */
+.modal {
+    display: none; 
+    position: fixed; 
+    left: 2.5%;
+    top: 2.5%;
+    width: 90%; 
+    height: 90%; 
+    overflow: auto; 
+    background-image: url("img/hugemac.jpg");
+    background-size: cover;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #616663;
+    margin: 10% auto; 
+    padding: 3em;
+    border: 1px solid rgb(126, 30, 134);
+    width: 90%; 
+    font-size: 16px;
+    overflow: auto;
+}
+
+/* Buttons inside Modal*/
+.modal-btn {
+    padding: 6px 40px;
+}
+
+/* The Close Button */
+.close {
+    color: rgb(228, 9, 9);
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+/**/
+
+/*Footer - Pusheen links to Github*/
+
+.bread {
+    height:150px;
+    width:150px;
+    display:flex;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+
+.main-footer{
+    background-color: #939399;
+    width: 100%;
+    align-content:center;
+
+}
+
+.vanGogh {
+    color: purple;
+    font-family: 'Amatic SC';
+    font-weight: 700;
+    font-size: 4em;
+    text-align: center;
+}
+
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+/* Media Query - Keep it simple unless you get extra time*/
+
+@media (max-width:650px) {
+    body{
+        background-color: #939399;
+        color: white;
+    }
+
+    .modal{
+        background-image: none;
+    }
+
+    .header-container {
+        text-align:center;
+        background-image:url("img/multilgmac.jpg");
+        color: black;
+        overflow: hidden;
+        background-size: cover;
+    }
+    
+    .mac-logo {
+        border-radius: 62.5px;
+        height: 175px;
+        width: 125px;
+        margin:50px;
+        border: 2px dotted #5C3B7A;
+        transition: all .5s;
+    }
+    
+    .mac-logo:hover {
+        transform: scale(1.5) rotate(360deg);
+    }
+
+    .macaroons {
+        height: 300px;
+        width: 300px;
+    }
+
+    .main-footer {
+        background-color: white;
+        color: black;
+        text-align: center;
+
+    }
+    .bread {
+        height:75px;
+        width:75px;
+    }
+}

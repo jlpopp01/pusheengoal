@@ -1,0 +1,144 @@
+<!doctypeHTML>
+
+<!-- Goals for this page: Bright header, title. Minimal bootstrap. Photos animation to show info. JS to pop up a form for contact information. Verification in HTML input tags. -->
+
+<!-- Goals for FSJS Project: Additional form pops up - add email address and project request - lookup email and project request - delete requests -->
+
+<html>
+<head>
+    <title>Mac and Tea</title>
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+
+
+</head>
+
+<body>
+
+<!--Header with logo and BG image-->
+    <div class="header-container">
+        <header="main-header  clearfix">
+            <img src="../img/bluevioletmac.jpg" alt = "Light violet macaroons" class="mac-logo">
+                <h1>Mac and Tea</h1>
+                    <h2> Welcome to Mac and Tea! We supply the macaroons, you supply the tea!</h2>
+        </header>
+    </div>
+
+
+<!--Body - all images and descriptions with them. Use CSS to hide and show-->    
+    <main>
+
+        <div class="content  clearfix">
+
+            <div class="mac-container">
+                <div class="macphoto">
+                    <img src="../img/chocfilmac.jpg" alt = "Chocolate filled macaroons" class="macaroons">
+                    <div class="img-overlay">
+                        <h3>Made to Order</h3>
+                            <p>We make our macaroons fresh and however you want! Want them all chocolate filled? Done.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mac-container">
+                <div class="macphoto">
+                    <img src="../img/ediblepaint.jpg" alt ="Brightly painted macaroons" class="macaroons">
+                    <div class="img-overlay">
+                            <h3>Eat in Stlye</h3>
+                                <p>Along with making fresh batches every day, we can match nearly anything! Need macaroons to go with your Abstract Art Gallery opening? We've got you covered.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mac-container">
+                <div class="macphoto">
+                    <img src="../img/eggs.jpg" alt="Fresh eggs in all our macaroons" class="macaroons">
+                    <div class="img-overlay">
+                        <h3>Fresh Local Eggs</h3>
+                            <p>We like to start with the freshest ingrediants possible. One way we can do this is by using locally gathered eggs from our own farm. Happy chickens make happy eggs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mac-container">
+                <div class="macphoto">
+                    <img src="../img/freshingrediants.jpg" alt="Macaroons with raspberries, bananas, and blueberries" class="macaroons">
+                    <div class="img-overlay">
+                        <h3>Fresh Ingrediants</h3>
+                            <p>We like to start with local fresh ingrediants but that isn't always possible. How is your banana tree doing in Kentucky? For ingrediants that are not locally farmed we rely on a wonderful supplier who makes daily deliveries</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mac-container">
+                <div class="macphoto">
+                    <img src="../img/macandroses.jpg" alt="Macaroons and roses" class="macaroons">
+                    <div class="img-overlay">
+                        <h3>Romance Game Strong</h3>
+                            <p>Need a little something special? No problem. All we need is a 24 hour notice and we can get your order out.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mac-container">
+                <div class="macphoto">
+                    <img src="../img/macwallsm.jpg" alt="Stacks of macaroons" class="macaroons">
+                    <div class="img-overlay">
+                        <h3>Liking What You See?</h3>
+                            <p>This still isn't a business and man do I want some macaroons now! Last time you saw this, it was a simple modal. Look away, look back, now we've got some node to it! Now, you submit your email address and a project idea and boom! It's on a list infront of you. Wait, you don't need those buttons anymore? No problem, delete the request! If you're liking what you're finding, we should colaborate. If you click <a href="http://www.github.com/jlpopp01" target="_blank">Pusheen</a> below it will take you to my GitHub. Thanks to Google for all the images.</p>
+                            <div class="regmodal">
+                            <button class="submit" id="contactMeB" alt=>What's This?</button>
+                                <div id="contactMe" class="modal">
+                                    <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                            <p>
+                                                <form id="form-container">
+                                                        <div class= "form-group">
+                                                                <label for ="inputEmail">Email Address  </label>
+                                                                <input type = "email" class = "form-control" id="inputEmail" placeholder="Enter Email">
+                                                           </div>    
+                                                           <div class= "form-group">
+                                                                   <label for ="whatstheTea">What Can I Code For You? </label>
+                                                                   <input type = "text" class = "form-control" id="drama" placeholder="What can I code for you?">
+                                                           </div>   
+  
+                                                       
+                                                           <div class = "modal-footer"> 
+                                                                    <!-- Add the extra buttons here! --> 
+                                                               <button type="button" onclick = "handleAddFileClick()" class="modal-btn">Add your request!</button>
+                                                           </div>
+                                                </form>
+                                            </p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+<!-- Footer - links to GitHub via Pusheen-->
+    <footer class="main-footer">
+            <a href="https://github.com/jlpopp01" class="button" target="_blank"><img src="../img/useforghlnk.jpg" alt="Pusheen with his head stuck in bread. Links to GitHub" class="bread"></a>
+                <p class="vanGogh">"Be kind to your self. Be good to your self."</p>
+    </footer>
+
+<!-- Scripts for JavaScript. No Jquery present -->  
+<script id="list-template" type="text/x-handlebars-template">
+    {{#each list}}
+    <div class="row">
+      <div class="col-xs-6"><strong>{{name}}</strong></div>
+      <div class="col-xs-6">{{value}}</div>
+    </div>
+    {{/each}}
+  </script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.8/handlebars.min.js"></script>
+<script src="./js/app.js"></script>
+   
+</body>
+</html>
+
