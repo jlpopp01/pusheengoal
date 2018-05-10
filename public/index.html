@@ -90,12 +90,12 @@
                         <h3>Liking What You See?</h3>
                             <p>This still isn't a business and man do I want some macaroons now! Last time you saw this, it was a simple modal. Look away, look back, now we've got some node to it! Now, you submit your email address and a project idea and boom! It's on a list infront of you. Wait, you don't need those buttons anymore? No problem, delete the request! If you're liking what you're finding, we should colaborate. If you click <a href="http://www.github.com/jlpopp01" target="_blank">Pusheen</a> below it will take you to my GitHub. Thanks to Google for all the images.</p>
                             <div class="regmodal">
-                            <button class="submit" id="contactMeB" alt=>What's This?</button>
+                           <button type="button" onclick = "handleAddFileClick" id="contactMeB" class = "modal-btn" alt=>What's This?</button>
                                 <div id="contactMe" class="modal">
                                     <div class="modal-content">
                                         <span class="close">&times;</span>
                                             <p>
-                                                <form id="form-container">
+                                                <form id="form-container" formmethod = "post">
                                                         <div class= "form-group">
                                                                 <label for ="inputEmail">Email Address  </label>
                                                                 <input type = "email" class = "form-control" id="inputEmail" placeholder="Enter Email">
@@ -103,12 +103,11 @@
                                                            <div class= "form-group">
                                                                    <label for ="whatstheTea">What Can I Code For You? </label>
                                                                    <input type = "text" class = "form-control" id="drama" placeholder="What can I code for you?">
-                                                           </div>   
-  
-                                                       
+                                                           </div>
                                                            <div class = "modal-footer"> 
                                                                     <!-- Add the extra buttons here! --> 
-                                                               <button type="button" onclick = "handleAddFileClick()" class="modal-btn">Add your request!</button>
+                                                                    <button type="button" onclick="submitFileForm()" class="btn btn-success">Submit</button>
+                                                                    <button type="button" onclick="cancelFileForm()" class="btn btn-link">cancel</button>
                                                            </div>
                                                 </form>
                                             </p>
@@ -118,26 +117,29 @@
                     </div>
                 </div>
             </div>
-    </main>
 
-<!-- Footer - links to GitHub via Pusheen-->
+            <!-- Footer - links to GitHub via Pusheen-->
     <footer class="main-footer">
-            <a href="https://github.com/jlpopp01" class="button" target="_blank"><img src="../img/useforghlnk.jpg" alt="Pusheen with his head stuck in bread. Links to GitHub" class="bread"></a>
-                <p class="vanGogh">"Be kind to your self. Be good to your self."</p>
-    </footer>
+        <a href="https://github.com/jlpopp01" class="button" target="_blank"><img src="../img/useforghlnk.jpg" alt="Pusheen with his head stuck in bread. Links to GitHub" class="bread"></a>
+            <p class="vanGogh">"Be kind to your self. Be good to your self."</p>
+</footer>
 
 <!-- Scripts for JavaScript. No Jquery present -->  
 <script id="list-template" type="text/x-handlebars-template">
-    {{#each list}}
-    <div class="row">
-      <div class="col-xs-6"><strong>{{name}}</strong></div>
-      <div class="col-xs-6">{{value}}</div>
-    </div>
-    {{/each}}
-  </script>  
+{{#each list}}
+<div class="row">
+  <div class="col-xs-6"><strong>{{name}}</strong></div>
+  <div class="col-xs-6">{{value}}</div>
+</div>
+{{/each}}
+</script>  
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.8/handlebars.min.js"></script>
 <script src="./js/app.js"></script>
+    </main>
+
+
+
    
 </body>
 </html>
