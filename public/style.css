@@ -69,7 +69,7 @@ input {
 
 .macaroons {
     height: 400px;
-    width: 400px; 
+    width: 400px;
     transition: transform .5s;
 }
 
@@ -109,7 +109,7 @@ button {
 	position: absolute;
 	top: 0;
 	right: 0;
-	bottom: 0; 
+	bottom: 0;
 	left: 0;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -137,13 +137,13 @@ button {
 
 /* The Modal (background) */
 .modal {
-    display: none; 
-    position: fixed; 
+    display: none;
+    position: fixed;
     left: 2.5%;
     top: 2.5%;
-    width: 90%; 
-    height: 90%; 
-    overflow: auto; 
+    width: 90%;
+    height: 90%;
+    overflow: auto;
     background-image: url("img/hugemac.jpg");
     background-size: cover;
 }
@@ -151,10 +151,10 @@ button {
 /* Modal Content/Box */
 .modal-content {
     background-color: #616663;
-    margin: 10% auto; 
+    margin: 10% auto;
     padding: 3em;
     border: 1px solid rgb(126, 30, 134);
-    width: 90%; 
+    width: 90%;
     font-size: 16px;
     overflow: auto;
 }
@@ -198,7 +198,7 @@ button {
 
 .vanGogh {
     color: purple;
-    font-family: 'Amatic SC';
+    font-family: helvetica;
     font-weight: 700;
     font-size: 4em;
     text-align: center;
@@ -229,7 +229,7 @@ button {
         overflow: hidden;
         background-size: cover;
     }
-    
+
     .mac-logo {
         border-radius: 62.5px;
         height: 175px;
@@ -238,7 +238,7 @@ button {
         border: 2px dotted #5C3B7A;
         transition: all .5s;
     }
-    
+
     .mac-logo:hover {
         transform: scale(1.5) rotate(360deg);
     }
